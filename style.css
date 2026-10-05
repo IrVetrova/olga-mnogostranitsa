@@ -229,21 +229,21 @@ body.панель-с-переходом .липкая-кнопка{ transition: 
 #экран-01 .шапка__лиц{ display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: var(--серый); }
 #экран-01 .шапка__лиц .иконка{ width: 16px; height: 16px; color: var(--золото); }
 #экран-01 .афиша{ display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(28px, 4vw, 64px);
-      align-items: center; max-width: var(--ширина); margin: 0 auto; padding: clamp(40px, 6vw, 88px) 20px 0; }
+      align-items: center; max-width: var(--ширина); margin: 0 auto; padding: clamp(20px, 2.4vw, 34px) 20px 0; }
 #экран-01 .афиша__текст > *{ margin: 0; }
 #экран-01 .кикер-афиши{ display: flex; align-items: center; gap: 12px; font: 800 16px/1.3 var(--шрифт-заголовков);
-      letter-spacing: .18em; text-transform: uppercase; color: var(--золото); margin-bottom: 18px; }
+      letter-spacing: .18em; text-transform: uppercase; color: var(--золото); margin-bottom: 12px; }
 #экран-01 .кикер-афиши::before{ content: ""; width: 26px; height: 2px; background: var(--бордо-свет); flex: none; }
 #экран-01 h1{ margin: 0; color: var(--белый); text-wrap: balance; }
 #экран-01 .h1-верх{ display: block; font-size: clamp(20px, 2.1vw, 28px); font-weight: 700; line-height: 1.2; color: var(--серый); margin-bottom: 10px; }
-#экран-01 .h1-крупно{ display: block; font-size: clamp(38px, 5.4vw, 74px); font-weight: 900; line-height: .98;
+#экран-01 .h1-крупно{ display: block; font-size: clamp(38px, 4.4vw, 62px); font-weight: 900; line-height: .98;
       text-transform: uppercase; letter-spacing: -.01em; }
 #экран-01 .h1-крупно em{ font-style: normal; color: var(--бордо-свет); }
-#экран-01 .черта{ width: 64px; height: 4px; border-radius: 2px; margin: 24px 0 22px;
+#экран-01 .черта{ width: 64px; height: 4px; border-radius: 2px; margin: 16px 0 14px;
       background: linear-gradient(90deg, var(--бордо-свет), var(--золото)); }
 #экран-01 .лид-афиши{ font: 700 clamp(18px, 1.6vw, 22px)/1.4 var(--шрифт-заголовков); color: color-mix(in srgb, var(--цвет-тёмный-текст) 92%, var(--цвет-тёмный-фон)); max-width: 34rem; }
 #экран-01 .лид-афиши em{ font-style: normal; color: var(--бордо-свет); }
-#экран-01 .цифры-афиши{ display: flex; flex-wrap: wrap; gap: 0; margin: 30px 0 32px; padding: 0; list-style: none; }
+#экран-01 .цифры-афиши{ display: flex; flex-wrap: wrap; gap: 0; margin: 20px 0 22px; padding: 0; list-style: none; }
 #экран-01 .цифры-афиши li{ padding: 0 22px; border-left: 1px solid var(--ночь-линия); }
 #экран-01 .цифры-афиши li:first-child{ padding-left: 0; border-left: 0; }
 #экран-01 .цифры-афиши b{ display: block; font: 900 clamp(28px, 2.8vw, 38px)/1.05 var(--шрифт-заголовков); color: var(--белый); white-space: nowrap; }
