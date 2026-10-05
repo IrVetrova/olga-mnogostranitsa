@@ -1708,7 +1708,8 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
       --бордо-свет: color-mix(in oklch, var(--цвет-акцент-яркий) 72%, var(--цвет-тёмный-текст));
       --золото: var(--цвет-тёплый-мягкий); --белый: var(--цвет-тёмный-текст);
       --серый: color-mix(in srgb, var(--цвет-тёмный-текст) 76%, var(--цвет-тёмный-фон));
-      background: linear-gradient(160deg, var(--ночь-2), var(--ночь)); color: var(--белый); padding: 0; }
+      background: linear-gradient(160deg, var(--ночь-2), var(--ночь)); color: var(--белый); padding: 0; overflow: visible; position: relative; z-index: 30; }
+  #экран-00 + .блок { padding-top: clamp(28px, 4vw, 48px); }
   #экран-00 .шапка { display: flex; justify-content: space-between; align-items: center; gap: 16px;
       max-width: var(--ширина, 1200px); margin: 0 auto; padding: 18px 20px; border-bottom: 1px solid var(--ночь-линия); }
   #экран-00 .шапка__лого { font: 800 17px/1.2 var(--шрифт-заголовков); color: var(--белый); text-decoration: none; }
