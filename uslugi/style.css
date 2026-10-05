@@ -1730,9 +1730,9 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-03 h2 em { font-style: normal; color: var(--цвет-акцент); }
   #экран-03 .услуги { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--отступ-блока); }
   #экран-03 .услуга { display: grid; min-width: 0; align-content: start; gap: 10px; padding: clamp(22px, 2.2vw, 28px);
-      border-radius: calc(var(--радиус-плитки) * 2); background: var(--цвет-фон-карточки); color: var(--цвет-текст); box-shadow: var(--тень); border: 2px solid var(--цвет-акцент); }
+      border-radius: calc(var(--радиус-плитки) * 2); background: var(--цвет-фон-карточки); color: var(--цвет-текст); box-shadow: 0 14px 40px color-mix(in srgb, var(--цвет-акцент) 22%, transparent), 0 4px 14px color-mix(in srgb, var(--цвет-текст) 10%, transparent); border: 2px solid var(--цвет-акцент); }
   #экран-03 .услуга { transition: transform .2s, box-shadow .2s; }
-  #экран-03 .услуга:hover { transform: translateY(-3px); }
+  #экран-03 .услуга:hover { transform: translateY(-3px); box-shadow: 0 20px 52px color-mix(in srgb, var(--цвет-акцент) 30%, transparent), 0 6px 18px color-mix(in srgb, var(--цвет-текст) 12%, transparent); }
   #экран-03 .услуга h3, #экран-03 .услуга p { transition: color .2s; }
   #экран-03 .услуга:hover h3 { color: var(--цвет-акцент); }
   #экран-03 .услуга:hover p { color: var(--цвет-текст); }
