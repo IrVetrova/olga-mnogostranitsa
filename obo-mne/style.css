@@ -1723,14 +1723,15 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   }
 
 /* экран 03 */
-#экран-03 .разворот { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(28px, 5vw, 64px); align-items: center; }
+#экран-03.блок { padding-block: clamp(36px, 4vw, 56px); }
+  #экран-03 .разворот { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(28px, 5vw, 64px); align-items: center; }
   #экран-03 .рассказ { display: grid; gap: 18px; justify-items: start; }
   #экран-03 .рассказ > * { margin: 0; }
   #экран-03 h2 em { font-style: normal; color: var(--цвет-акцент); }
   #экран-03 .кикер { display: inline-flex; align-items: center; gap: 12px; padding: 0; background: none; border-radius: 0; color: var(--цвет-акцент); text-transform: uppercase; font-weight: 800; letter-spacing: .18em; }
   #экран-03 .кикер::before { content: ""; width: 26px; height: 2px; background: var(--цвет-акцент); flex: none; }
 
-  #экран-03 .портрет { position: relative; margin: 0; max-width: 340px; width: 100%; justify-self: center; border-radius: calc(var(--радиус-плитки) * 2); overflow: hidden; box-shadow: var(--тень); }
+  #экран-03 .портрет { position: relative; margin: 0; max-width: 340px; width: 100%; justify-self: center; border-radius: var(--радиус-плитки); overflow: hidden; box-shadow: var(--тень); }
   #экран-03 .портрет img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 20%; }
   #экран-03 .портрет__имя { position: absolute; inset: auto 0 0 0; display: grid; gap: 6px; padding: 72px 24px 22px;
       background: linear-gradient(to top, color-mix(in srgb, var(--цвет-тёмный-фон) 88%, transparent), transparent);
@@ -1743,14 +1744,14 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-03 .портрет__плашка .иконка { width: 16px; height: 16px; color: currentColor; }
 
   #экран-03 .факты { list-style: none; margin: 0; padding: 0; width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-  #экран-03 .факт { display: grid; gap: 8px; align-content: start; padding: 18px; border-radius: calc(var(--радиус-плитки) * 2);
+  #экран-03 .факт { display: grid; gap: 8px; align-content: start; padding: 18px; border-radius: var(--радиус-плитки);
       background: var(--цвет-фон-карточки); border: var(--нить) solid var(--цвет-линия); border-top: 2px solid var(--цвет-акцент); box-shadow: var(--тень); }
   #экран-03 .факт .иконка { width: 22px; height: 22px; color: var(--цвет-акцент); }
   #экран-03 .факт__главное { font: 800 var(--кегль-лид)/1.15 var(--шрифт-заголовков); color: var(--цвет-акцент); }
   #экран-03 .факт__пояс { font-size: var(--кегль-мелкий); line-height: 1.4; color: var(--цвет-текст-мягкий); }
 
   #экран-03 .подход { width: 100%; box-sizing: border-box; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 16px; align-items: start;
-      padding: 20px 22px; border-radius: calc(var(--радиус-плитки) * 2);
+      padding: 20px 22px; border-radius: var(--радиус-плитки);
       background: color-mix(in srgb, var(--цвет-акцент) 5%, var(--цвет-фон-карточки));
       border: var(--нить) solid color-mix(in srgb, var(--цвет-акцент) 22%, transparent); }
   #экран-03 .подход__знак { display: grid; place-items: center; width: 44px; height: 44px; border-radius: var(--радиус);
@@ -1762,10 +1763,10 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-03 .обучение { margin-top: clamp(36px, 5vw, 64px); display: grid; gap: 18px; }
   #экран-03 .обучение__метка { margin: 0; font-size: var(--кегль-текст); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--цвет-текст-мягкий); }
   #экран-03 .ленты { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; }
-  #экран-03 .серт { display: grid; grid-template-rows: auto 1fr; height: 100%; border: var(--нить) solid var(--цвет-линия); border-radius: calc(var(--радиус-плитки) * 2); overflow: hidden; text-decoration: none;
+  #экран-03 .серт { display: grid; grid-template-rows: auto 1fr; height: 100%; border: var(--нить) solid var(--цвет-линия); border-radius: var(--радиус-плитки); overflow: hidden; text-decoration: none;
       background: var(--цвет-фон-карточки); color: var(--цвет-текст); }
   #экран-03 .серт:hover { box-shadow: var(--тень); }
-  #экран-03 .серт__кадр { display: grid; place-items: center; aspect-ratio: 4 / 3; padding: 10px; margin: 0; border-radius: 0; box-shadow: none; background: var(--цвет-фон-2); }
+  #экран-03 .серт__кадр { display: grid; place-items: center; aspect-ratio: 4 / 3; padding: 10px; margin: 0; border-radius: var(--радиус-карточки); box-shadow: none; background: var(--цвет-фон-2); }
   #экран-03 .серт__кадр img { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
   #экран-03 .серт__подпись { display: grid; gap: 4px; align-content: start; padding: 12px 14px 14px; border-top: var(--нить) solid var(--цвет-линия); }
   #экран-03 .серт__назв { font-size: var(--кегль-мелкий); line-height: 1.35; font-weight: 700; }

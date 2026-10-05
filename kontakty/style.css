@@ -1734,12 +1734,12 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-07 .кикер::before { content: ""; width: 26px; height: 2px; background: currentColor; flex: none; }
   #экран-07 h2 { text-wrap: balance; }
   #экран-07 h2 em { font-style: normal; color: var(--цвет-акцент); }
-  #экран-07 .вид-города { margin: 0 auto clamp(24px, 3.4vw, 44px); max-width: 66rem; border-radius: calc(var(--радиус-плитки) * 2); box-shadow: var(--тень); }
-  #экран-07 .вид-города img { display: block; width: 100%; height: auto; aspect-ratio: 21 / 8; object-fit: cover; object-position: 50% 62%; border-radius: calc(var(--радиус-плитки) * 2); }
+  #экран-07 .вид-города { margin: 0 auto clamp(24px, 3.4vw, 44px); max-width: 66rem; border-radius: var(--радиус-плитки); box-shadow: var(--тень); }
+  #экран-07 .вид-города img { display: block; width: 100%; height: auto; aspect-ratio: 21 / 8; object-fit: cover; object-position: 50% 62%; border-radius: var(--радиус-плитки); }
   #экран-07 .тело { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: clamp(24px, 3.4vw, 48px); align-items: stretch; max-width: 66rem; }
   #экран-07 .способы { display: grid; gap: 14px; align-content: start; }
   #экран-07 .способ { display: flex; align-items: center; gap: 18px; padding: clamp(16px, 2vw, 22px) clamp(18px, 2.4vw, 26px);
-      border-radius: calc(var(--радиус-плитки) * 2); border: var(--нить) solid; text-decoration: none; min-width: 0; }
+      border-radius: var(--радиус-плитки); border: var(--нить) solid; text-decoration: none; min-width: 0; }
   #экран-07 .способ--главный { padding: clamp(24px, 3vw, 36px) clamp(20px, 2.6vw, 30px); }
   #экран-07 .способ__икон { flex: none; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; }
   #экран-07 .способ--главный .способ__икон { width: 64px; height: 64px; }
@@ -1749,7 +1749,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-07 .способ__имя { font-weight: 700; font-size: var(--кегль-лид); line-height: 1.25; }
   #экран-07 .способ--главный .способ__имя { font-size: var(--кегль-лид); }
   #экран-07 .способ__адрес { font-size: var(--кегль-текст); line-height: 1.4; overflow-wrap: anywhere; }
-  #экран-07 .приглашение { display: grid; gap: 16px; align-content: center; padding: clamp(26px, 3.2vw, 44px); border-radius: calc(var(--радиус-плитки) * 2); border: var(--нить) solid; }
+  #экран-07 .приглашение { display: grid; gap: 16px; align-content: center; padding: clamp(26px, 3.2vw, 44px); border-radius: var(--радиус-плитки); border: var(--нить) solid; }
   #экран-07 .приглашение > * { margin: 0; }
   #экран-07 .приглашение h3 { font-weight: 700; font-size: var(--кегль-лид); line-height: 1.2; }
   #экран-07 .приглашение p { font-size: var(--кегль-текст); line-height: 1.6; }
