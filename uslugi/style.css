@@ -1730,7 +1730,9 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-03 h2 em { font-style: normal; color: var(--цвет-акцент); }
   #экран-03 .услуги { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--отступ-блока); }
   #экран-03 .услуга { display: grid; min-width: 0; align-content: start; gap: 10px; padding: clamp(22px, 2.2vw, 28px);
-      border-radius: calc(var(--радиус-плитки) * 2); background: var(--цвет-фон-карточки); color: var(--цвет-текст); box-shadow: var(--тень); }
+      border-radius: calc(var(--радиус-плитки) * 2); background: var(--цвет-фон-карточки); color: var(--цвет-текст); box-shadow: var(--тень); border: 2px solid var(--цвет-акцент); }
+  #экран-03 .услуга { transition: transform .2s, box-shadow .2s; }
+  #экран-03 .услуга:hover { transform: translateY(-3px); }
   #экран-03 .услуга > * { margin: 0; }
   #экран-03 .услуга__плитка { display: grid; place-items: center; width: 52px; height: 52px; border-radius: var(--радиус-плитки);
       background: var(--цвет-акцент); color: var(--цвет-на-акценте); }
