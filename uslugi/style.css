@@ -1737,6 +1737,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-03 .услуга__плитка .иконка { width: 24px; height: 24px; color: currentColor; }
   #экран-03 .услуга h3 { padding-top: 6px; font: 800 var(--кегль-лид)/1.2 var(--шрифт-заголовков); color: var(--цвет-текст); }
   #экран-03 .услуга p { font-size: var(--кегль-текст); line-height: 1.5; color: var(--цвет-текст-мягкий); }
+  #экран-03 .услуги__кнопка { display: flex; justify-content: center; margin: clamp(24px, 3vw, 36px) 0 0; }
   @media (max-width: 1099px) { #экран-03 .услуги { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 599px) { #экран-03 .услуги { grid-template-columns: 1fr; } }
 
