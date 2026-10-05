@@ -1723,7 +1723,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   }
 
 /* экран 03 */
-#экран-03 .шапка-центр { display: grid; gap: 14px; justify-items: center; text-align: center; max-width: 44rem; margin: 0 auto clamp(28px, 4vw, 48px); }
+#экран-03 .шапка-центр { display: grid; gap: 10px; justify-items: center; text-align: center; max-width: 44rem; margin: 0 auto clamp(20px, 2.5vw, 32px); }
   #экран-03 .шапка-центр > * { margin-bottom: 0; }
   #экран-03 .кикер { padding: 0; background: none; border-radius: 0; color: var(--цвет-акцент); text-transform: uppercase; font-weight: 700; }
   #экран-03 h2 em { font-style: normal; color: var(--цвет-акцент); }
