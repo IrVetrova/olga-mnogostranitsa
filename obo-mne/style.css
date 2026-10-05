@@ -1727,7 +1727,8 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-03 .рассказ { display: grid; gap: 18px; justify-items: start; }
   #экран-03 .рассказ > * { margin: 0; }
   #экран-03 h2 em { font-style: normal; color: var(--цвет-акцент); }
-  #экран-03 .кикер { padding: 0; background: none; border-radius: 0; color: var(--цвет-акцент); text-transform: uppercase; font-weight: 700; }
+  #экран-03 .кикер { display: inline-flex; align-items: center; gap: 12px; padding: 0; background: none; border-radius: 0; color: var(--цвет-акцент); text-transform: uppercase; font-weight: 800; letter-spacing: .18em; }
+  #экран-03 .кикер::before { content: ""; width: 26px; height: 2px; background: var(--цвет-акцент); flex: none; }
 
   #экран-03 .портрет { position: relative; margin: 0; max-width: 340px; width: 100%; justify-self: center; border-radius: calc(var(--радиус-плитки) * 2); overflow: hidden; box-shadow: var(--тень); }
   #экран-03 .портрет img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 20%; }
