@@ -1702,6 +1702,25 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   body.панель-с-переходом .липкая-кнопка { transition: none; }
 }
 
+/* экран 00 */
+#экран-00 { --ночь: var(--цвет-тёмный-фон); --ночь-2: var(--цвет-тёмный-фон-2);
+      --ночь-линия: color-mix(in srgb, var(--цвет-тёмный-текст) 14%, var(--цвет-тёмный-фон));
+      --бордо-свет: color-mix(in oklch, var(--цвет-акцент-яркий) 72%, var(--цвет-тёмный-текст));
+      --золото: var(--цвет-тёплый-мягкий); --белый: var(--цвет-тёмный-текст);
+      --серый: color-mix(in srgb, var(--цвет-тёмный-текст) 76%, var(--цвет-тёмный-фон));
+      background: linear-gradient(160deg, var(--ночь-2), var(--ночь)); color: var(--белый); padding: 0; }
+  #экран-00 .шапка { display: flex; justify-content: space-between; align-items: center; gap: 16px;
+      max-width: var(--ширина, 1200px); margin: 0 auto; padding: 18px 20px; border-bottom: 1px solid var(--ночь-линия); }
+  #экран-00 .шапка__лого { font: 800 17px/1.2 var(--шрифт-заголовков); color: var(--белый); text-decoration: none; }
+  #экран-00 .шапка__лого b { color: var(--бордо-свет); font-weight: 800; }
+  #экран-00 .шапка__лиц { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: var(--серый); }
+  #экран-00 .шапка__лиц .иконка { width: 16px; height: 16px; color: var(--золото); }
+  @media (max-width: 899px) {
+    #экран-00 .шапка { padding: 14px 16px; gap: 10px; }
+    #экран-00 .шапка__лого { font-size: 15px; }
+    #экран-00 .полн-шапка { display: none; }
+  }
+
 /* экран 04 */
 #экран-04 .шапка-центр { display: grid; gap: 14px; justify-items: center; text-align: center; max-width: 44rem; margin: 0 auto clamp(28px, 4vw, 52px); }
   #экран-04 .шапка-центр > * { margin-bottom: 0; }
