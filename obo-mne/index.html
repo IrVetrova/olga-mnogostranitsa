@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ольга Ярославцева — риэлтор и ипотечный брокер в Тюмени</title>
+<meta name="description" content="Риэлтор и ипотечный брокер в Тюмени: помогаю купить жильё без давления и спешки — от подбора и ипотеки до сделки.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Ольга Ярославцева — риэлтор и ипотечный брокер в Тюмени">
+<meta property="og:description" content="Как купить жильё в Тюмени без давления и спешки — Ольга Ярославцева, риэлтор и ипотечный брокер">
+<meta property="og:image" content="https://irvetrova.github.io/olga-yaroslavtseva/img/card.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap">
+<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<style>
+:root {
+  --шрифт-заголовков: Montserrat, system-ui, sans-serif;  --шрифт-текста: Montserrat, system-ui, sans-serif;
+  --цвет-фон: #F6F3EE;  --цвет-фон-2: #EDE6DA;  --цвет-фон-карточки: #FFFDF9;
+  --цвет-текст: #26261C;  --цвет-текст-мягкий: #58564B;  --цвет-текст-тихий: #6E6A5E;
+  --цвет-акцент: #71090A;  --цвет-акцент-тёмный: #5C0708;  --цвет-акцент-яркий: #A8262A;  --цвет-на-акценте: #F6F3EE;
+  --цвет-акцент-глубже: #5C0708;  --цвет-акцент-маркер: #93302A;
+  --цвет-линия: #DDD4C6;
+  --цвет-тёмный-фон: #0E1526;  --цвет-тёмный-фон-2: #141C33;  --цвет-тёмный-текст: #F6F3EE;
+  --цвет-тёмный-фон-3: #0A0F1C;  --цвет-тёмный-фон-4: #172039;
+  --цвет-тёплый: #AC8E76;  --цвет-тёплый-мягкий: #CDBBA7;
+  --цвет-стекло: color-mix(in srgb, #0E1526 86%, transparent);
+  --тень: 0 12px 34px color-mix(in srgb, #26261C 6%, transparent);
+  --тень-чип: 0 10px 30px color-mix(in srgb, #26261C 12%, transparent);
+  --тень-глубокая: 0 24px 60px color-mix(in srgb, #26261C 35%, transparent);
+  --тень-спутник: 0 30px 60px color-mix(in srgb, #26261C 70%, transparent);
+  --тень-плиты: 0 40px 100px color-mix(in srgb, #26261C 70%, transparent);
+  --кегль-h1: 34px;  --кегль-h2: clamp(28px, 4.5vw, 46px);
+  --кегль-текст: clamp(16px, 1.3vw, 19px);  --кегль-лид: clamp(17px, 1.4vw, 20px);
+  --кегль-мелкий: 14px;  --кегль-кикер: clamp(14px, 1.1vw, 15px);  --кегль-цифра: clamp(32px, 4.5vw, 54px);  --разрядка-кикера: .04em;
+  --отступ-секции: clamp(64px, 10vw, 136px);  --отступ-блока: clamp(18px, 2.2vw, 32px);
+  --отступ-секции-тихо: clamp(50px, 7.8vw, 106px);  --отступ-секции-громко: clamp(74px, 11.6vw, 158px);
+  --ширина: 1140px;  --ширина-колонки: 580px;  --радиус: 8px;  --радиус-малый: 4px;
+  --радиус-карточки: 10px;  --радиус-плитки: 12px;  --радиус-телефон: 46px;  --кнопка-радиус: 999px;
+  --радиус-модуля: 8px;  --нить: 1px;
+  --плавность: cubic-bezier(.2, .7, .2, 1);  --длительность: .25s;
+  --цвет-тёплый-тёмный: #856851;
+}
+@media (min-width: 900px) {
+  :root { --кегль-h1: clamp(46px, 4.4vw, 62px); }
+}
+:root, .светлый { --цвет-кнопки: #71090A; --цвет-на-кнопке: #F6F3EE; --цвет-кнопки-навёл: var(--цвет-акцент-тёмный); }
+.тёмный { --цвет-кнопки: #AC8E76; --цвет-на-кнопке: #0E1526; --цвет-кнопки-навёл: #BBA38F; }
+
+</style>
+<script>
+(function () {
+  var ЭТАЛОН = 0.535;                  // очко Open Sans — текстовой гарнитуры утверждённых макетов
+  var ПОТОЛОК = 1.2, МЁРТВАЯ = 0.02;   // выше потолка расползается раскладка; ближе к единице не трогаем вовсе
+  var КОМПЬЮТЕР = "(min-width: 900px)";
+  var ТОКЕНЫ = ["--кегль-текст", "--кегль-лид", "--кегль-мелкий", "--кегль-кикер"];
+  var корень = document.documentElement;
+  var холст = document.createElement("canvas").getContext("2d");
+  var ждём = 0;
+
+  function мера(буква) { var м = холст.measureText(буква); return (м && м.actualBoundingBoxAscent) || 0; }
+
+  function применить() {
+    ждём = 0;
+    if (!холст) { return; }
+
+    for (var i = 0; i < ТОКЕНЫ.length; i++) { корень.style.removeProperty(ТОКЕНЫ[i]); }
+    var стиль = getComputedStyle(корень), стек = стиль.getPropertyValue("--шрифт-текста").trim();
+    if (!стек) { return; }
+    холст.font = "400 100px " + стек;
+
+    var очко = Math.max(мера("х"), мера("x")) / 100;
+    if (!(очко > 0)) { return; }
+    var k = Math.round(Math.min(ПОТОЛОК, Math.max(1, ЭТАЛОН / очко)) * 1000) / 1000;
+    if (k - 1 < МЁРТВАЯ || !matchMedia(КОМПЬЮТЕР).matches) { k = 1; }
+    корень.setAttribute("data-очко", очко.toFixed(3));      // чтобы проверка могла сказать числа вслух
+    корень.setAttribute("data-поправка", k.toFixed(3));
+    if (k === 1) { return; }
+    for (i = 0; i < ТОКЕНЫ.length; i++) {
+      var было = стиль.getPropertyValue(ТОКЕНЫ[i]).trim();
+      if (было) { корень.style.setProperty(ТОКЕНЫ[i], "calc((" + было + ") * " + k + ")"); }
+    }
+  }
+
+  применить();
+
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(применить); }
+
+  addEventListener("resize", function () { ждём = ждём || requestAnimationFrame(применить); });
+})();
+</script>
+</head>
+<body>
+<section class="блок блок--о-себе светлый" id="экран-03" data-тип="о-себе" data-вёрстка="своя">
+<div class="блок__внутри">
+  <div class="разворот">
+    <figure class="фото портрет">
+      <img src="../img/olga-na-stroyke.webp" width="720" height="960" alt="Ольга Ярославцева в каске на фоне строящегося дома в Тюмени" loading="lazy">
+      <span class="портрет__плашка"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 11l9-8 9 8v10h-6v-6H9v6H3z"/>
+</svg>Покупка · продажа · ипотека</span>
+      <figcaption class="портрет__имя"><span class="портрет__кто">Ольга Ярославцева</span><span class="портрет__роль">Риэлтор · ипотечный брокер</span></figcaption>
+    </figure>
+    <div class="рассказ">
+      <p class="кикер">Кто будет рядом</p>
+      <h2>Не тороплю и не пугаю — <em>веду по шагам</em></h2>
+      <p class="лид">На рынке много риэлторов, которые запугивают и торопят. Я работаю иначе</p>
+      <ul class="факты">
+        <li class="факт"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="5" width="18" height="16" rx="2"/>
+  <path d="M3 10h18M8 3v4M16 3v4"/>
+</svg><span class="факт__главное">С 2018</span><span class="факт__пояс">в недвижимости, работаю в Тюмени</span></li>
+        <li class="факт"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="9" cy="8" r="3.5"/>
+  <circle cx="17" cy="9" r="2.5"/>
+  <path d="M3 20a6 6 0 0 1 12 0M15 20a4 4 0 0 1 6 0"/>
+</svg><span class="факт__главное">Семьи и 40+</span><span class="факт__пояс">с ними работаю чаще всего</span></li>
+        <li class="факт"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 11l9-8 9 8v10h-6v-6H9v6H3z"/>
+</svg><span class="факт__главное">С Севера</span><span class="факт__пояс">помогу выбрать квартиру за короткий приезд</span></li>
+      </ul>
+      <div class="подход">
+        <span class="подход__знак"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4 20v-4h4v-4h4v-4h4V4"/>
+  <path d="M4 20h16"/>
+</svg></span>
+        <p>Вы ставите задачу, а я выстраиваю путь к её решению — <em>спокойно, по шагам и без давления</em></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="обучение">
+    <p class="обучение__метка">Обучение — сертификаты о повышении квалификации</p>
+    <ul class="ленты">
+      <li>
+        <a class="серт" href="../img/diplom-ipotechnyj-broker.webp" target="_blank" rel="noopener">
+          <figure class="фото серт__кадр"><img src="../img/diplom-ipotechnyj-broker.webp" width="828" height="579" loading="lazy" alt="Сертификат Ольги Ярославцевой о повышении квалификации по программе «Ипотечный брокер», 2023 год"></figure>
+          <span class="серт__подпись"><span class="серт__назв">Ипотечный брокер</span><span class="серт__где">TEON Group · 2023</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="серт" href="../img/diplom-slozhnyj-klient.webp" target="_blank" rel="noopener">
+          <figure class="фото серт__кадр"><img src="../img/diplom-slozhnyj-klient.webp" width="800" height="565" loading="lazy" alt="Сертификат Ольги Ярославцевой по программе «Одобрение сложного клиента с первой подачи», 2023 год"></figure>
+          <span class="серт__подпись"><span class="серт__назв">Одобрение сложного клиента с первой подачи</span><span class="серт__где">TEON Group · 2023</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="серт" href="../img/diplom-donorskaya-ipoteka.webp" target="_blank" rel="noopener">
+          <figure class="фото серт__кадр"><img src="../img/diplom-donorskaya-ipoteka.webp" width="800" height="1131" loading="lazy" alt="Вертикальный сертификат Ольги Ярославцевой об обучении по программам банков по донорской ипотеке, 2025 год"></figure>
+          <span class="серт__подпись"><span class="серт__назв">Обучение по программам банков по донорской ипотеке</span><span class="серт__где">Ипотечный учебный центр · 2025</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="серт" href="../img/diplom-kombo-ipoteka.webp" target="_blank" rel="noopener">
+          <figure class="фото серт__кадр"><img src="../img/diplom-kombo-ipoteka.webp" width="800" height="566" loading="lazy" alt="Сертификат Ольги Ярославцевой по программе «Комбо-ипотека и её рефинансирование», 2026 год"></figure>
+          <span class="серт__подпись"><span class="серт__назв">Комбо-ипотека и её рефинансирование</span><span class="серт__где">Ипотечный учебный центр · 2026</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="серт" href="../img/diplom-kreditnaya-istoriya.webp" target="_blank" rel="noopener">
+          <figure class="фото серт__кадр"><img src="../img/diplom-kreditnaya-istoriya.webp" width="800" height="566" loading="lazy" alt="Сертификат Ольги Ярославцевой об интенсиве по исправлению кредитной истории и восстановлению репутации заёмщика, 2026 год"></figure>
+          <span class="серт__подпись"><span class="серт__назв">Исправление кредитной истории и восстановление репутации заёмщика</span><span class="серт__где">интенсив РИКС · 2026</span></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</section>
+<section class="блок блок--подвал блок--тихо тёмный второй" id="экран-08" data-тип="подвал" data-вёрстка="своя">
+<div class="блок__внутри">
+  <div class="сетка">
+    <div>
+      <span class="знак">Ольга Ярославцева · риэлтор</span>
+      <p class="подпись">Ипотечный брокер · Тюмень</p>
+    </div>
+    <div>
+      <h4>Разделы</h4>
+      <div class="ссылки подвал__ссылки подвал__разделы">
+        <a href="../">Главная</a>
+        <a href="../uslugi/">Услуги</a>
+        <a href="../kontakty/">Контакты</a>
+        <a href="#экран-03">Кто будет рядом</a>
+      </div>
+    </div>
+    <div>
+      <h4>Контакты</h4>
+      <div class="ссылки подвал__ссылки">
+        <a href="../#экран-07" target="_blank" rel="noopener">MAX</a>
+        <a href="../#экран-07" target="_blank" rel="noopener">Telegram</a>
+        <a href="../#экран-07" target="_blank" rel="noopener">ВКонтакте</a>
+        <a href="../#экран-07">почта@пример.ru</a>
+      </div>
+    </div>
+  </div>
+  <div class="низ">
+    <span>ИП Фамилия Имя Отчество · ОГРНИП 000000000000000 · ИНН 000000000000 · г. Тюмень</span>
+    <span>© 2026</span>
+  </div>
+</div>
+</section>
+</body>
+</html>
