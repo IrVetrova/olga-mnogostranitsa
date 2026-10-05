@@ -1766,8 +1766,8 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-03 .серт { display: grid; grid-template-rows: auto 1fr; height: 100%; border: var(--нить) solid var(--цвет-линия); border-radius: var(--радиус-плитки); overflow: hidden; text-decoration: none;
       background: var(--цвет-фон-карточки); color: var(--цвет-текст); }
   #экран-03 .серт:hover { box-shadow: var(--тень); }
-  #экран-03 .серт__кадр { display: grid; place-items: center; aspect-ratio: 4 / 3; padding: 10px; margin: 0; border-radius: var(--радиус-карточки); box-shadow: none; background: var(--цвет-фон-2); }
-  #экран-03 .серт__кадр img { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+  #экран-03 .серт__кадр { display: grid; grid-template-rows: minmax(0, 1fr); grid-template-columns: minmax(0, 1fr); place-items: center; overflow: hidden; aspect-ratio: 4 / 3; padding: 10px; margin: 0; border-radius: var(--радиус-карточки); box-shadow: none; background: var(--цвет-фон-2); }
+  #экран-03 .серт__кадр img { display: block; width: 100%; height: 100%; object-fit: contain; }
   #экран-03 .серт__подпись { display: grid; gap: 4px; align-content: start; padding: 12px 14px 14px; border-top: var(--нить) solid var(--цвет-линия); }
   #экран-03 .серт__назв { font-size: var(--кегль-мелкий); line-height: 1.35; font-weight: 700; }
   #экран-03 .серт__где { font-size: var(--кегль-мелкий); line-height: 1.35; color: var(--цвет-текст-мягкий); }
