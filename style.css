@@ -257,7 +257,9 @@ body.панель-с-переходом .липкая-кнопка{ transition: 
 #экран-01 .кнопка-контур{ display: inline-flex; align-items: center; justify-content: center; min-height: 56px; padding: 16px 30px;
       border: 1px solid color-mix(in srgb, var(--белый) 28%, transparent); border-radius: 999px; color: var(--белый); text-decoration: none;
       font: 700 16px/1.2 var(--шрифт-заголовков); transition: border-color var(--длительность) var(--плавность); }
-#экран-01 .кнопка-контур:hover{ border-color: var(--белый); }
+#экран-01 .кнопка-контур:hover{ background: var(--белый); border-color: var(--белый); color: var(--цвет-тёмный-фон); }
+#экран-01 .кнопка-контур{ transition: border-color var(--длительность) var(--плавность), background var(--длительность) var(--плавность), color var(--длительность) var(--плавность); }
+#экран-01 .кнопки-афиши .кнопка:hover{ background: var(--цвет-акцент-яркий); border-color: var(--цвет-акцент-яркий); color: var(--цвет-тёмный-фон); }
 #экран-01 .пилюля{ display: inline-flex; align-items: center; gap: 10px; margin-top: 18px; padding: 12px 20px;
       border: 1px solid var(--ночь-линия); border-radius: 999px; background: color-mix(in srgb, var(--ночь-карта) 70%, transparent);
       font-size: 15px; color: var(--серый); }
@@ -353,6 +355,9 @@ body.панель-с-переходом .липкая-кнопка{ transition: 
 #экран-02.тёмный .карт li::before{ background: var(--цвет-акцент-яркий); }
 #экран-02.тёмный .карт--север{ border-top-width: var(--нить); border-top-color: color-mix(in srgb, var(--цвет-тёмный-текст) 12%, transparent); border-left-color: var(--цвет-акцент-яркий); }
 #экран-02 .карт{ transition: transform .3s ease, box-shadow .3s ease; }
+#экран-02 .карт h3{ transition: color .2s; }
+#экран-02.светлый .карт:hover h3{ color: var(--цвет-акцент); }
+#экран-02.тёмный .карт:hover h3{ color: var(--цвет-акцент-яркий); }
 #экран-02 .карт:hover{ transform: translateY(-8px); box-shadow: var(--тень-глубокая, var(--тень)); }
 @media (prefers-reduced-motion: reduce){#экран-02 .карт{ transition: none; }
 #экран-02 .карт:hover{ transform: none; }}
@@ -409,7 +414,7 @@ body.панель-с-переходом .липкая-кнопка{ transition: 
 #экран-07 .шапка-лево > *{ margin-bottom: 0; max-width: 42rem; }
 #экран-07 .шапка-лево,#экран-07 .вид-города,#экран-07 .тело{ max-width: 66rem; margin-inline: auto; }
 #экран-07 .приглашение .кнопка{ background: color-mix(in srgb, var(--цвет-акцент-яркий) 84%, var(--цвет-тёмный-текст)); color: var(--цвет-тёмный-текст); border-color: color-mix(in srgb, var(--цвет-акцент-яркий) 84%, var(--цвет-тёмный-текст)); border-radius: 999px; font-weight: 800; box-shadow: 0 14px 40px color-mix(in srgb, var(--цвет-акцент-яркий) 45%, transparent); }
-#экран-07 .приглашение .кнопка:hover{ background: var(--цвет-акцент-яркий); border-color: var(--цвет-акцент-яркий); color: var(--цвет-тёмный-текст); }
+#экран-07 .приглашение .кнопка:hover{ background: var(--цвет-акцент-яркий); border-color: var(--цвет-акцент-яркий); color: var(--цвет-тёмный-фон); }
 #экран-07 .шапка-лево .лид{ max-width: none; color: var(--цвет-текст-мягкий); }
 #экран-07 .кикер{ padding: 0; background: none; border-radius: 0; color: var(--цвет-акцент); text-transform: uppercase; font-weight: 700; }
 #экран-07 h2 em{ font-style: normal; color: var(--цвет-акцент); }

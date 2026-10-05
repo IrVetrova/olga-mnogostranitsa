@@ -1728,7 +1728,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-07 .шапка-лево, #экран-07 .вид-города, #экран-07 .тело { max-width: 66rem; margin-inline: auto; }
 
   #экран-07 .приглашение .кнопка { background: color-mix(in srgb, var(--цвет-акцент-яркий) 84%, var(--цвет-тёмный-текст)); color: var(--цвет-тёмный-текст); border-color: color-mix(in srgb, var(--цвет-акцент-яркий) 84%, var(--цвет-тёмный-текст)); border-radius: 999px; font-weight: 800; box-shadow: 0 14px 40px color-mix(in srgb, var(--цвет-акцент-яркий) 45%, transparent); }
-  #экран-07 .приглашение .кнопка:hover { background: var(--цвет-акцент-яркий); border-color: var(--цвет-акцент-яркий); color: var(--цвет-тёмный-текст); }
+  #экран-07 .приглашение .кнопка:hover { background: var(--цвет-акцент-яркий); border-color: var(--цвет-акцент-яркий); color: var(--цвет-тёмный-фон); }
   #экран-07 .шапка-лево .лид { max-width: none; color: var(--цвет-текст-мягкий); }
   #экран-07 .кикер { padding: 0; background: none; border-radius: 0; color: var(--цвет-акцент); text-transform: uppercase; font-weight: 700; }
   #экран-07 h2 em { font-style: normal; color: var(--цвет-акцент); }
