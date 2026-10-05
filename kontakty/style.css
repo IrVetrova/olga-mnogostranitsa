@@ -1730,8 +1730,9 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-07 .приглашение .кнопка { background: color-mix(in srgb, var(--цвет-акцент-яркий) 84%, var(--цвет-тёмный-текст)); color: var(--цвет-тёмный-текст); border-color: color-mix(in srgb, var(--цвет-акцент-яркий) 84%, var(--цвет-тёмный-текст)); border-radius: 999px; font-weight: 800; box-shadow: 0 14px 40px color-mix(in srgb, var(--цвет-акцент-яркий) 45%, transparent); }
   #экран-07 .приглашение .кнопка:hover { background: var(--цвет-акцент-яркий); border-color: var(--цвет-акцент-яркий); color: var(--цвет-тёмный-фон); }
   #экран-07 .шапка-лево .лид { max-width: none; color: var(--цвет-текст-мягкий); }
-  #экран-07 .кикер { display: inline-flex; align-items: center; gap: 12px; padding: 0; background: none; border-radius: 0; color: var(--цвет-акцент); text-transform: uppercase; font-weight: 700; }
+  #экран-07 .кикер { display: inline-flex; align-items: center; gap: 12px; padding: 0; background: none; border-radius: 0; color: var(--цвет-акцент); text-transform: uppercase; font-weight: 800; letter-spacing: .18em; }
   #экран-07 .кикер::before { content: ""; width: 26px; height: 2px; background: currentColor; flex: none; }
+  #экран-07 h2 { text-wrap: balance; }
   #экран-07 h2 em { font-style: normal; color: var(--цвет-акцент); }
   #экран-07 .вид-города { margin: 0 auto clamp(24px, 3.4vw, 44px); max-width: 66rem; border-radius: calc(var(--радиус-плитки) * 2); box-shadow: var(--тень); }
   #экран-07 .вид-города img { display: block; width: 100%; height: auto; aspect-ratio: 21 / 8; object-fit: cover; object-position: 50% 62%; border-radius: calc(var(--радиус-плитки) * 2); }
@@ -1798,3 +1799,5 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
     #экран-08 .сетка { grid-template-columns: 1fr; }
     #экран-08 .низ { flex-direction: column; flex-wrap: nowrap; align-items: stretch; }
   }
+
+.кнопка{font-weight:800}

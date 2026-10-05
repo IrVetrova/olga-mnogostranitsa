@@ -1751,7 +1751,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
 /* экран 04 */
 #экран-04 .шапка-центр { display: grid; gap: 14px; justify-items: center; text-align: center; max-width: 44rem; margin: 0 auto clamp(28px, 4vw, 52px); }
   #экран-04 .шапка-центр > * { margin-bottom: 0; }
-  #экран-04 .кикер { display: inline-flex; align-items: center; gap: 12px; padding: 0; background: none; border-radius: 0; color: color-mix(in srgb, var(--цвет-акцент-яркий) 60%, var(--цвет-тёмный-текст)); text-transform: uppercase; font-weight: 700; }
+  #экран-04 .кикер { display: inline-flex; align-items: center; gap: 12px; padding: 0; background: none; border-radius: 0; color: color-mix(in srgb, var(--цвет-акцент-яркий) 60%, var(--цвет-тёмный-текст)); text-transform: uppercase; font-weight: 800; letter-spacing: .18em; }
   #экран-04 .кикер::before { content: ""; width: 26px; height: 2px; background: currentColor; flex: none; }
   #экран-04 h2 em { font-style: normal; color: color-mix(in srgb, var(--цвет-акцент-яркий) 60%, var(--цвет-тёмный-текст)); }
 
@@ -1796,7 +1796,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
 /* экран 06 */
 #экран-06 .шапка-центр { display: grid; gap: 14px; justify-items: center; text-align: center; max-width: 44rem; margin: 0 auto clamp(28px, 4vw, 52px); }
   #экран-06 .шапка-центр > * { margin: 0; }
-  #экран-06 .кикер { display: inline-flex; align-items: center; gap: 12px; padding: 0; background: none; border-radius: 0; color: color-mix(in srgb, var(--цвет-акцент-яркий) 60%, var(--цвет-тёмный-текст)); text-transform: uppercase; font-weight: 700; }
+  #экран-06 .кикер { display: inline-flex; align-items: center; gap: 12px; padding: 0; background: none; border-radius: 0; color: color-mix(in srgb, var(--цвет-акцент-яркий) 60%, var(--цвет-тёмный-текст)); text-transform: uppercase; font-weight: 800; letter-spacing: .18em; }
   #экран-06 .кикер::before { content: ""; width: 26px; height: 2px; background: currentColor; flex: none; }
   #экран-06 h2 em { font-style: normal; color: color-mix(in srgb, var(--цвет-акцент-яркий) 60%, var(--цвет-тёмный-текст)); }
   #экран-06 .лид { color: var(--цвет-тёплый-мягкий); }
@@ -1871,3 +1871,5 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
     #экран-08 .сетка { grid-template-columns: 1fr; }
     #экран-08 .низ { flex-direction: column; flex-wrap: nowrap; align-items: stretch; }
   }
+
+.кнопка{font-weight:800}
