@@ -1737,6 +1737,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-03 .услуга:hover h3 { color: var(--цвет-акцент); }
   #экран-03 .услуга:hover p { color: var(--цвет-текст); }
   #экран-03 .услуги__кнопка .кнопка:hover { color: var(--цвет-акцент-яркий); }
+  #экран-03.блок { padding-bottom: clamp(28px, 3.5vw, 48px); }
   #экран-03 .услуга > * { margin: 0; }
   #экран-03 .услуга__плитка { display: grid; place-items: center; width: 52px; height: 52px; border-radius: var(--радиус-плитки);
       background: var(--цвет-акцент); color: var(--цвет-на-акценте); }
